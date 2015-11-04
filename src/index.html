@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello</title>
+    <script>
+    window.addEventListener('message', function(message) {
+        var versions = JSON.parse(message.data);
+        document.getElementById('node-version').innerText = versions['node'];
+        document.getElementById('tint-version').innerText = versions['tint'];
+    });
+    </script>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>This is my first tint application.</p>
+    <p>We are using node.js <span id="node-version"></span></p>
+    <p>In addition using tint <span id="tint-version"></span></p>
+</body>
+</html>

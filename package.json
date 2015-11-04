@@ -1,0 +1,32 @@
+{
+  "name": "hello-tint",
+  "longname": "Say hello to Tint",
+  "namespace": "com.example.hello-tint",
+  "version": "1.0.0",
+  "description": "Checking out Tint",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "tint src/index.js",
+    "clean": "rimraf dist/*",
+    "build": "tntbuild package.json --out dist --clean",
+    "package": "npm run clean && npm run build"
+  },
+  "author": "Ni Axi <niaxi@tuta.io>",
+  "license": "ISC",
+  "copyright": "Some fellow",
+  "sources": {
+    "directory": ".",
+    "exclude": "./dist|./build|node_modules"
+  },
+  "icon": {
+    "osx": [
+      "./src/img/speech117.png"
+    ],
+    "windows": [
+      "./src/img/speech117.png"
+    ]
+  },
+  "devDependencies": {
+    "rimraf": "^2.4.3"
+  }
+}
