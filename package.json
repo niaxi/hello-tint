@@ -16,7 +16,7 @@
   "copyright": "Some fellow",
   "sources": {
     "directory": ".",
-    "exclude": "./dist|./build|node_modules"
+    "exclude": "./dist|./build|.git|node_modules"
   },
   "icon": {
     "osx": [
