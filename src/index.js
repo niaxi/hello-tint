@@ -1,8 +1,16 @@
 require('Common');
 var win = new Window();
+var toolbar = new Toolbar();
+
+
 application.exitAfterWindowsClose = true;
 win.visible = true;
 win.title = "Hi Tint World!";
+
+btn = new Button();
+btn.image = 'back';
+toolbar.appendChild( btn );
+win.toolbar = toolbar;
 
 
 var webview = new WebView(); // Create a new webview for HTML.
