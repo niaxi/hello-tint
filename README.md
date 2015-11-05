@@ -15,6 +15,11 @@ Run the app
 > npm start
 
 
+Package win + mac distros
+
+> npm run package
+
+
 For list of available actions
 
 > npm run
