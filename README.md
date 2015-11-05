@@ -18,3 +18,13 @@ Run the app
 For list of available actions
 
 > npm run
+
+
+## Hurdles
+
+The app works when run directly from the cli. However,
+
+- Packaged app does not launch on Windows
+- Packaged app launches on OSX, but does not render any UI
+
+The stuff above make it impossible for me to take this any further.
